@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>The Budgety App</title>
+
+    <!-- Adding the Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/963f6f9fbd.js" crossorigin="anonymous"></script>
+
+    <!-- Adding the Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Adding the Local Css File -->
+	<link rel="stylesheet" type="text/css" href="budgety.css">
+
+</head>
+
+
+<body>
+
+    <div class="top">
+
+        <div class="budget">
+            
+            <div class="budget_title">
+                
+                Available Budget in <span class="budget_title-month">%Month%</span>
+
+            </div>
+
+            <div class="budget_value">+2,345.64</div>
+
+            <div class="budget_income clearfix">
+                
+                <div class="budget_income-text">Income</div>
+
+                <div class="right">
+                    
+                    <div class="budget_income-value">+4,300.00</div>
+                    <div class="budget_income-percentage">&nbsp;</div>
+
+                </div>
+
+            </div>
+
+            <div class="budget_expenses clearfix">
+                
+                <div class="budget_expenses-text">Expenses</div>
+
+                <div class="right">
+                    
+                    <div class="budget_expenses-value">-1,380.00</div>
+                    <div class="budget_expenses-percentage">45%</div>
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+        
+    </div>
+
+    <div class="bottom">
+        
+        <div class="add">
+            
+            <div class="add_container">
+                
+                <select class="add_type">
+                    
+                    <option value="inc">+</option>
+                    <option value="exp">-</option>
+
+                </select>
+
+                <input type="text" class=" add_description" placeholder="Add Description">
+
+                <input type="number" class=" add_value" placeholder="Add Value">
+
+                <button class="add_btn"><i class="fas fa-plus-circle"></i></button>
+                
+            </div>
+            
+
+        </div>
+
+        <div class="container">
+            
+            <div class="income">
+                
+                <h2 class="income_title">Income</h2>
+
+                <div class="income_list">
+                    
+                    <!-- <div class="item clearfix" id="income-0">
+                        
+                        <div class="item_description">Salary 1</div>
+
+                        <div class="right">
+                            
+                            <div class="item_value">+2,846.78</div>
+
+                            <div class="item_delete">
+                            
+                                <button class="item_delete-btn"> <i class="fas fa-trash-alt"></i> </button>
+                            
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="item clearfix" id="income-1">
+                        
+                        <div class="item_description">Salary 2</div>
+
+                        <div class="right">
+                            
+                            <div class="item_value">+1,846.78</div>
+
+                            <div class="item_delete">
+                            
+                                <button class="item_delete-btn"><i class="fas fa-trash-alt"></i></button>
+                            
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+                </div>
+
+            </div>
+
+
+            <div class="expenses">
+                
+                <h2 class="expenses_title">Expenses</h2>
+
+                <div class="expenses_list">
+                    
+                    <!-- <div class="item clearfix" id="expense-0">
+                        
+                        <div class="item_description">Rent 1</div>
+
+                        <div class="right">
+                            
+                            <div class="item_value">-1,846.78</div>
+
+                            <div class="item_percentage">21%</div>
+
+                            <div class="item_delete">
+                            
+                                <button class="item_delete-btn"><i class="fas fa-trash-alt"></i></button>
+                            
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="item clearfix" id="expense-1">
+                        
+                        <div class="item_description">Rent 2</div>
+
+                        <div class="right">
+                            
+                            <div class="item_value">-1,846.78</div>
+
+                            <div class="item_percentage">35%</div>
+
+                            <div class="item_delete">
+                            
+                                <button class="item_delete-btn"><i class="fas fa-trash-alt"></i></button>
+                            
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+
+    <!-- Adding the Bootstrap Assocaited Script Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+	<!-- Adding the local Javascript File -->
+	<script type="text/javascript" src="budgety.js"></script>
+
+</html>
